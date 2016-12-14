@@ -10,11 +10,11 @@ class App extends React.PureComponent<{ }, { }> {
         Model.show( )
             .then(( value: string ) => {
                 console.log(`value: ${value}`);
-                // alert(value)
+                alert(value)
             })
             .catch( e => {
                  console.log( e );
-                 // alert(e)
+                 alert(e)
             })
     }
 
