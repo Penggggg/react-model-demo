@@ -7,7 +7,7 @@ import Model from './model';
 class App extends React.PureComponent<{ }, { }> {
 
     onClick = ( ) => {
-        Model.show( )
+        Model.show({ msg: 'Are you a Man?', title: 'Hello!' })
             .then(( value: string ) => {
                 console.log(`value: ${value}`);
                 alert(value)
